@@ -1,0 +1,10 @@
+{
+  "$schema":"./vendor/phpbench/phpbench/phpbench.schema.json",
+  "runner.bootstrap": "vendor/autoload.php",
+  "runner.php_disable_ini": false,
+  "runner.php_config": {
+    "memory_limit": -1,
+    "opcache.enable": true,
+    "opcache.enable_cli": true
+  }
+}

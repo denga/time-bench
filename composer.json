@@ -1,0 +1,20 @@
+{
+  "autoload": {
+    "psr-4": {
+      "TimeBench\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TimeBench\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "nesbot/carbon": "^3.0",
+    "phpbench/phpbench": "^1.2"
+  },
+  "scripts": {
+    "bench": "phpbench run tests/Benchmark --php-config='opcache.enable_cli: true' --report=default"
+  }
+}
